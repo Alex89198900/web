@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+ 
+  background-repeat: no-repeat;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  padding: 15px;
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+  color:black;
+  
+  background: linear-gradient(to top, rgb(241, 241, 112) 50%, rgb(92, 92, 243) 50%);
+  height: 100%;
+}
+
+.todo {
+  /* outline: 5px solid red; */
+  flex: 1;
+  color: black;
+}
+
+.calendar {
+  margin-top: 127px;
+  flex: 1;
+}
+
+.class{
+color:black;
+}
+
+
+.month {
+  width: 100%;
+  height: 12rem;
+
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays td {
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #262626;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #167e56;
+}
+
+tr {
+  display: flex;
+}
+
+td {
+  height: 6rem;
+}
+
+td:hover {
+  background-color: blue;
+}
+
+.days {
+  display: flex;
+}
+
+.today {
+  background: blue;
+}
+
+.aside {
+  display: flex;
+  justify-content: end;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.ver {
+  margin-top: 22rem;
+  align-items: center;
+}
+
+.month__show {
+  display: flex;
+}
+
+
+
+.next {
+  background: none;
+  border: none;
+}
+
+.back {
+  background: none;
+  border: none;
+}
+
+.calendar__body {
+  margin: -22px 0px 0px 90px;
+}
+
+li{
+  font-size: 25px;
+  color:red;
+  
+}
+
+
+
+
+.instr {
+  padding-top: 50px;
+}
+h2{
+margin: 24px 0px 39px 228px;
+font-size: 25px;
+}
+
+.message{
+  border-radius: 5px;
+  background-color: #cae8db;
+  height: 30px;
+  margin: 70px 0px 0px 182px;
+  width: 200px;
+}
+
+
+
+
+.todo__list{
+  height: 500px;
+  padding: 0px 0px 0px 0px;
+  overflow: scroll;
+}
+
+
+.add{
+  background-color: #167e56;
+  width: 90px;
+  height: 30px;
+}
+.btn__up{
+  border-radius: 5px;
+  background-color: #167e56;
+  width: 60px;
+  height: 30px;
+  margin: 39px 0px 0px 476px;
+}
+
+.instr li{
+  margin-top: 5px;
+  list-style: none;
+  font-size: 20px;
+  color: black;
+}
+tr:hover{
+  cursor: pointer;
+
+}

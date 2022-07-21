@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalendarTodo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+    <div class="container">
+     
+      <div class="todo">
+        
+        <div class="create-new-todo">
+            <input type="text" class="message" placeholder="Введіть завдання" autocomplete="off">
+            <button class="add">Добавити</button>
+        </div>
+        <button class="btn__up">Сброс</button>
+        <h2>Список завдань:</h2>
+        <ul class="todo__list">
+
+        </ul>
+      </div>
+      <div class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">
+            <button class="back">
+              <img src="images/Shape (1).svg" alt="" class="img__back" />
+            </button>
+            <div class="month__show">
+              <h1></h1>
+              <p></p>
+            </div>
+            <button class="next">
+              <img src="images/Shape 2.svg" alt="" class="img__next" />
+            </button>
+          </div>
+        </div>
+        <div class="calendar__body">
+          <div class="days">
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+            <div>Sun</div>
+          </div>
+          <table class="weekdays">
+            <tbody class="ver"></tbody>
+          </table>
+        </div>
+        
+      </div>
+      <div class="inform">
+        
+        <ul class="instr">
+          <li>Для збереження чи перегляду задач натисніть кнопку сброс потім виберіть дату чи дати.</li>
+          <li>Для видалення завдань затисніть ctrl і зробіть подвійний клік правою кнопкою миші на завдання.</li>
+          <li>Для виділення важливих завдань зробіть подвійний  клік правою кнопкою миші на завдання.</li>
+        </ul>
+      </div>
+      
+    </div>
+    
+      
+    <script src="script.js"></script>
+  </body>
+</html>
